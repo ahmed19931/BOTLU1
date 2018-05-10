@@ -9,11 +9,11 @@ json = (loadfile "./libs/JSON.lua")()
 serpent = require('serpent')
 local ko = ''
 print(colors([[%{red bright} 
- _   _      _ _         _____            ____        _     _        _
-| | | | ___| | | ___   |  ___|__  _ __  | __ )  ___ | |_  | | _____| | _____
-| |_| |/ _ \ | |/ _ \  | |_ / _ \| '__| |  _ \ / _ \| __| | |/ / _ \ |/ / _ \
-|  _  |  __/ | | (_) | |  _| (_) | |    | |_) | (_) | |_  |   <  __/   < (_) |
-|_| |_|\___|_|_|\___/  |_|  \___/|_|    |____/ \___/ \__| |_|\_\___|_|\_\___/
+ _   _      _ _         _____            ____        _    __ ___ __ _
+| | | | ___| | | ___   |  ___|__  _ __  | __ )  ___ | |_  __ _ _ _ _
+| |_| |/ _ \ | |/ _ \  | |_ / _ \| '__| |  _ \ / _ \| __| |  |   |
+|  _  |  __/ | | (_) | |  _| (_) | |    | |_) | (_) | |_  |  |___|_
+|_| |_|\___|_|_|\___/  |_|  \___/|_|    |____/ \___/ \__| |  |
 ]]))
 local function check_config()
 	config = dofile('config.lua')
@@ -63,9 +63,9 @@ bot_init = function(on_reload)
 		table.insert(botLUA, p)
 	end
 	print(colors('%{magenta}BOT The bot was turned on'))
-	print(colors('%{yellow bright}BY :- @ikeko   CH: @botLua    bot : @'..bot.username .. ', name bot ' .. bot.first_name ..'  id bot ('..bot.id..')'))
+	print(colors('%{yellow bright}BY :- @ALAM223   CH: @AMR2232  bot : @'..bot.username .. ', name bot ' .. bot.first_name ..'  id bot ('..bot.id..')'))
 	if not on_reload then
-	local text2 = 'تم تشغيل البوت \nBY : @ikeko  \nCH: @botLua \n CH2 : @eeqeq'
+	local text2 = 'تم تشغيل البوت \nBY : @ALAM223  \nCH: @AMR2232\n CH2 : @AMR2232'
         local dsad2 = 'https://api.telegram.org/bot'..config.bot_api_key..'/sendMessage?chat_id='..config.admin..'&text='..URL.escape(text2)
 	api.sendRequest(dsad2)
 	local keko = '386713631'
